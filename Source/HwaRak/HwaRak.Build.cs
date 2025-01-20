@@ -10,7 +10,7 @@ public class HwaRak : ModuleRules
 
 		PublicIncludePaths.AddRange(new string[] { "HwaRak" });
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

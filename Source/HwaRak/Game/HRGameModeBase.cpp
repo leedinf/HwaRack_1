@@ -6,7 +6,9 @@
 
 AHRGameModeBase::AHRGameModeBase()
 {
-	static ConstructorHelpers::FClassFinder<APawn> TopDownClassRef(TEXT("/Game/TopDown/Blueprints/BP_TopDownCharacter.BP_TopDownCharacter"));//_C는 클래스 정보
+	static ConstructorHelpers::FClassFinder<APawn> TopDownClassRef(TEXT("/Game/Character/BP_TopDownChar.BP_TopDownChar_C"));
+	//static ConstructorHelpers::FClassFinder<UUserWidget> UIClassRef(TEXT("/Game/UI/UI_Main.UI_Main_C"));
+
 	if(TopDownClassRef.Class) {
 		UE_LOG(LogTemp, Log, TEXT("why yes but~"));
 
@@ -16,6 +18,14 @@ AHRGameModeBase::AHRGameModeBase()
 		UE_LOG(LogTemp, Log, TEXT("why no~"));
 	}
 	//DefaultPawnClass
-	
+
+	//if (UIClassRef.Class) {
+	//	//HUDClass = UIClassRef.Class;
+
+	//}
+	//else {
+	//	UE_LOG(LogTemp, Log, TEXT("why no UI nn"));
+
+	//}
 	PlayerControllerClass = AHRPlayerController::StaticClass();//클래스 설정
 }
