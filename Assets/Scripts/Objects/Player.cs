@@ -23,14 +23,7 @@ public class Player : MonoBehaviour
     void FixedUpdate() {
         Vector2 nextVec = inputVec.normalized * Time.fixedDeltaTime * speed;
         rigid.MovePosition(rigid.position + nextVec);
-    }
 
-    void OnMove(InputValue value)
-    {
-        inputVec = value.Get<Vector2>();    
-    }
-
-    void LateUpdate() {
         anim.SetFloat("Vx", Math.Abs(inputVec.x));
         anim.SetFloat("Vy", inputVec.y);
         if(inputVec.x != 0){
@@ -43,5 +36,14 @@ public class Player : MonoBehaviour
         else{
             anim.SetTrigger("Moving");
         }
+    }
+
+    void OnMove(InputValue value)
+    {
+        inputVec = value.Get<Vector2>();    
+    }
+
+    void LateUpdate() {
+        
     }
 }
