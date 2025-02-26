@@ -21,6 +21,7 @@ public class SkillManager : MonoBehaviour
     void Update()
     {
         // 키 입력 예시 (1, 2, 3, ... 로 스킬 선택)
+        
         if (Input.GetKeyDown(KeyCode.Q))
         {
             UseSkill(skillIndex);

@@ -19,7 +19,16 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)){
+            anim.SetBool("Dash", true);
+        }
+        if(Input.GetKeyUp(KeyCode.Space)){
+            anim.SetBool("Dash", false);
+        }
+            
+    }
     void FixedUpdate() {
         Vector2 nextVec = inputVec.normalized * Time.fixedDeltaTime * speed;
         rigid.MovePosition(rigid.position + nextVec);
@@ -31,10 +40,13 @@ public class Player : MonoBehaviour
         }
 
         if(inputVec.y == 0 && inputVec.x == 0){
-            anim.SetTrigger("Stop");
+            anim.SetBool("Run", false);
+            anim.SetBool("Dash", false);
+            anim.SetBool("Stop", true);
         }
         else{
-            anim.SetTrigger("Moving");
+            anim.SetBool("Stop", false);
+            anim.SetBool("Run", true);
         }
     }
 
