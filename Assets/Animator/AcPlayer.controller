@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerStand
+  m_Name: Player_Stand
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -22,7 +22,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 201d184a53c06334d844d77b98216e78, type: 2}
+  m_Motion: {fileID: 7400000, guid: 790d4d8d90ca4c548bbc3a30994c2663, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

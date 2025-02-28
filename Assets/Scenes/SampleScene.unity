@@ -639,7 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillDataArray:
   - {fileID: 11400000, guid: 914b6ad04410ede48891a70efdc1d2cf, type: 2}
-  target: {fileID: 0}
+  target: {fileID: 720704799}
 --- !u!1 &805593223
 GameObject:
   m_ObjectHideFlags: 0
