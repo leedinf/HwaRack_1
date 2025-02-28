@@ -37,8 +37,6 @@ MemoryCaptures/
 sysinfo.txt
 *.apk
 *.unitypackage
-*.meta
-*.anim
 
 # Mac
 .DS_Store
